@@ -1,3 +1,5 @@
-app:
-    resource: "@AppBundle/Controller/"
+news_blog:
+    resource: "@NewsBlogBundle/Controller/"
     type:     annotation
+    prefix:   /
+
