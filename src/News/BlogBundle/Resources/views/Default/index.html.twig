@@ -1,10 +1,5 @@
 {% extends '::base.html.twig' %}
 
-{% block stylesheets %}
-    <link href='http://fonts.googleapis.com/css?family=Irish+Grover' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
-    <link href="{{ asset('css/screen.css') }}" type="text/css" rel="stylesheet" />
-{% endblock %}
 {% block body %}
 <section id="wrapper">
     <header id="header">
@@ -12,8 +7,8 @@
 
                 <nav>
                     <ul class="navigation">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="{{ path('homepage') }}">Home</a></li>
+                        <li><a href="{{ path('about') }}">About</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
